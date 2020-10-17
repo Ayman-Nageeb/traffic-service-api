@@ -29,4 +29,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/admins/{user}/edit', 'Dashboard\UserController@edit')->name('admins.edit');
     Route::put('/admins/{user}', 'Dashboard\UserController@update')->name('admins.update');
 
+    Route::get('/police', 'Dashboard\PoliceController@index')->name('police.index');
+    Route::get('/police/create', 'Dashboard\PoliceController@create')->name('police.create');
+    Route::post('/police', 'Dashboard\PoliceController@store')->name('police.store');
+    Route::get('/police/{police}/edit', 'Dashboard\PoliceController@edit')->name('police.edit');
+    Route::put('/police/{police}', 'Dashboard\PoliceController@update')->name('police.update');
+
 });
