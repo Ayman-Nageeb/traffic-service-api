@@ -242,6 +242,11 @@ return [
             'icon'        => 'far fa-fw fa-user',
         ],
         [
+            'text'        => 'Citizens',
+            'url'         => 'citizens',
+            'icon'        => 'far fa-fw fa-user',
+        ],
+        [
             'text'        => 'Police',
             'url'         => 'police',
             'icon'        => 'far fa-fw fa-user',

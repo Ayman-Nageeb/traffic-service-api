@@ -35,4 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/police/{police}/edit', 'Dashboard\PoliceController@edit')->name('police.edit');
     Route::put('/police/{police}', 'Dashboard\PoliceController@update')->name('police.update');
 
+    Route::get('/citizens', 'Dashboard\CitizenController@index')->name('citizens.index');
+    Route::get('/citizens/create', 'Dashboard\CitizenController@create')->name('citizens.create');
+    Route::post('/citizens', 'Dashboard\CitizenController@store')->name('citizens.store');
+    Route::get('/citizens/{citizen}/edit', 'Dashboard\CitizenController@edit')->name('citizens.edit');
+    Route::put('/citizens/{citizen}', 'Dashboard\CitizenController@update')->name('citizens.update');
+
 });
