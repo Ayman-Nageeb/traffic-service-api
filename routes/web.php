@@ -41,4 +41,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/citizens/{citizen}/edit', 'Dashboard\CitizenController@edit')->name('citizens.edit');
     Route::put('/citizens/{citizen}', 'Dashboard\CitizenController@update')->name('citizens.update');
 
+    Route::get('/licenses', 'Dashboard\LicenseController@index')->name('licenses.index');
+    Route::get('/licenses/create', 'Dashboard\LicenseController@create')->name('licenses.create');
+    Route::post('/licenses', 'Dashboard\LicenseController@store')->name('licenses.store');
+    Route::get('/licenses/{license}/edit', 'Dashboard\LicenseController@edit')->name('licenses.edit');
+    Route::put('/licenses/{license}', 'Dashboard\LicenseController@update')->name('licenses.update');
+
 });

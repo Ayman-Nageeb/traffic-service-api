@@ -251,6 +251,11 @@ return [
             'url'         => 'police',
             'icon'        => 'far fa-fw fa-user',
         ],
+        [
+            'text'        => 'License',
+            'url'         => 'licenses',
+            'icon'        => 'far fa-fw fa-user',
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
