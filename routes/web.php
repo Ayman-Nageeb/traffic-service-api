@@ -47,4 +47,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/licenses/{license}/edit', 'Dashboard\LicenseController@edit')->name('licenses.edit');
     Route::put('/licenses/{license}', 'Dashboard\LicenseController@update')->name('licenses.update');
 
+    Route::get('/car-licenses', 'Dashboard\CarLicenseController@index')->name('car-licenses.index');
+    Route::get('/car-licenses/create', 'Dashboard\CarLicenseController@create')->name('car-licenses.create');
+    Route::post('/car-licenses', 'Dashboard\CarLicenseController@store')->name('car-licenses.store');
+    Route::get('/car-licenses/{carLicense}/edit', 'Dashboard\CarLicenseController@edit')->name('car-licenses.edit');
+    Route::put('/car-licenses/{carLicense}', 'Dashboard\CarLicenseController@update')->name('car-licenses.update');
 });

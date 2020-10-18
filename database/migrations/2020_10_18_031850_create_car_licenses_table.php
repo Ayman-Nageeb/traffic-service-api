@@ -15,6 +15,15 @@ class CreateCarLicensesTable extends Migration
     {
         Schema::create('car_licenses', function (Blueprint $table) {
             $table->id();
+            $table->text('number');
+            $table->text('chassis_number');
+            $table->unsignedInteger('type');
+            $table->text('company');
+            $table->text('color');
+            $table->text('fuel');
+            $table->text('date_created');
+            $table->text('date_expired');
+            $table->foreignId('citizen_id')->references('id')->on('citizens');
             $table->timestamps();
         });
     }

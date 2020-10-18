@@ -252,8 +252,13 @@ return [
             'icon'        => 'far fa-fw fa-user',
         ],
         [
-            'text'        => 'License',
+            'text'        => 'Licenses',
             'url'         => 'licenses',
+            'icon'        => 'far fa-fw fa-user',
+        ],
+        [
+            'text'        => 'Car Licenses',
+            'url'         => 'car-licenses',
             'icon'        => 'far fa-fw fa-user',
         ],
         ['header' => 'account_settings'],
