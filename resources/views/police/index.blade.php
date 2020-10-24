@@ -21,7 +21,7 @@
                             <th scope="col">First Name</th>
                             <th scope="col">Last Name</th>
                             <th scope="col">Username</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">password</th>
                             <th scope="col"></th>
                         </tr>
                         </thead>
@@ -32,7 +32,7 @@
                                 <td>{{ $data->first_name }}</td>
                                 <td>{{ $data->last_name }}</td>
                                 <td>{{ $data->username }}</td>
-                                <td>{{ $data->email }}</td>
+                                <td>{{ $data->password }}</td>
                                 <td><a href="{{ route('police.edit', $data->id) }}" class="btn btn-sm btn-success">Edit</a></td>
                             </tr>
                         @endforeach

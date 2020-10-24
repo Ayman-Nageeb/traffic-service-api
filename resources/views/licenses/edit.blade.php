@@ -15,7 +15,7 @@
                         @csrf
                         @method('PUt')
                         <div class="form-group">
-                            <label>Plate Number</label>
+                            <label>Number</label>
                             <input type="text" class="form-control" name="number" required
                                    value="{{ $license->number }}">
                         </div>
@@ -28,7 +28,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Citizen</label>
+                            <label>type</label>
                             <select class="form-control" required name="type">
                                 <option value="1">Owned</option>
                                 <option value="2">Public</option>

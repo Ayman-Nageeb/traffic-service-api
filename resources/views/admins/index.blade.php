@@ -20,7 +20,7 @@
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
-                            <th scope="col"></th>
+                            <th scope="col">password</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -29,6 +29,7 @@
                                 <th scope="row">{{ $admin->id }}</th>
                                 <td>{{ $admin->name }}</td>
                                 <td>{{ $admin->email }}</td>
+                                <td>{{ $admin->password }}</td>
                                 <td><a href="{{ route('admins.edit', $admin->id) }}" class="btn btn-sm btn-success">Edit</a></td>
                             </tr>
                         @endforeach

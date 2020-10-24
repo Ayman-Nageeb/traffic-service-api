@@ -18,9 +18,9 @@
                         <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Plate number</th>
-                            <th scope="col">Type</th>
+                            <th scope="col">number</th>
                             <th scope="col">Driver</th>
+                            <th scope="col">Type</th>
                             <th scope="col">Date Created</th>
                             <th scope="col">Date Expired</th>
                             <th scope="col"></th>
@@ -31,8 +31,8 @@
                             <tr>
                                 <th scope="row">{{ $license->id }}</th>
                                 <td>{{ $license->number }}</td>
-                                <td>{{ $license->type }}</td>
                                 <td>{{ $license->citizen->first_name }}</td>
+                                <td>{{ $license->type }}</td>                              
                                 <td>{{ $license->date_created }}</td>
                                 <td>{{ $license->date_expired }}</td>
                                 <td><a href="{{ route('licenses.edit', $license->id) }}" class="btn btn-sm btn-success">Edit</a></td>

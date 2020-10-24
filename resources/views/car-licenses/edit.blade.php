@@ -43,7 +43,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Citizen</label>
+                            <label>type</label>
                             <select class="form-control" required name="type">
                                 <option value="1">Owned</option>
                                 <option value="2">Public</option>

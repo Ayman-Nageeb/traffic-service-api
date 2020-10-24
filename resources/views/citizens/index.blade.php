@@ -21,7 +21,7 @@
                             <th scope="col">First Name</th>
                             <th scope="col">Last Name</th>
                             <th scope="col">Username</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">password</th>
                             <th scope="col"></th>
                         </tr>
                         </thead>
@@ -32,7 +32,7 @@
                                 <td>{{ $citizen->first_name }}</td>
                                 <td>{{ $citizen->last_name }}</td>
                                 <td>{{ $citizen->username }}</td>
-                                <td>{{ $citizen->email }}</td>
+                                <td>{{ $citizen->password }}</td>
                                 <td><a href="{{ route('citizens.edit', $citizen->id) }}" class="btn btn-sm btn-success">Edit</a></td>
                             </tr>
                         @endforeach

@@ -52,4 +52,6 @@ Route::middleware('auth')->group(function () {
     Route::post('/car-licenses', 'Dashboard\CarLicenseController@store')->name('car-licenses.store');
     Route::get('/car-licenses/{carLicense}/edit', 'Dashboard\CarLicenseController@edit')->name('car-licenses.edit');
     Route::put('/car-licenses/{carLicense}', 'Dashboard\CarLicenseController@update')->name('car-licenses.update');
+
+    Route::get('/violations', 'Dashboard\ViolationsController@index')->name('violations-index');
 });

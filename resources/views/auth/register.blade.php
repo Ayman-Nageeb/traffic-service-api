@@ -1,1 +1,1 @@
-@extends('adminlte::auth.register')
+<h2>Access Denied</h2>
