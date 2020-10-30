@@ -231,11 +231,7 @@ return [
     */
 
     'menu' => [
-        [
-            'text' => 'search',
-            'search' => true,
-            'topnav' => true,
-        ],
+        
         [
             'text'        => 'Admins',
             'url'         => 'admins',
@@ -254,17 +250,17 @@ return [
         [
             'text'        => 'Licenses',
             'url'         => 'licenses',
-            'icon'        => 'far fa-fw fa-user',
+            'icon'        => 'far fa fa-address-card',
         ],
         [
             'text'        => 'Car Licenses',
             'url'         => 'car-licenses',
-            'icon'        => 'far fa-fw fa-user',
+            'icon'        => 'fa fa-car',
         ],
         [
             'text'        => 'Violations',
             'url'         => 'violations',
-            'icon'        => 'far fa-fw fa-user',
+            'icon'        => 'fa fa-exclamation-triangle',
         ],
     ],
 

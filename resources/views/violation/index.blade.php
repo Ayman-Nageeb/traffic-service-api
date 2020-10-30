@@ -4,7 +4,7 @@
 
 @section('content_header')
     <div class="d-flex justify-content-between">
-        <h1 class="m-0 text-dark">Violation</h1>
+        <h1 class="m-0 text-dark">Violations</h1>
     </div>
 @stop
 
@@ -19,7 +19,6 @@
                             <th scope="col">#</th>
                             <th scope="col">Type</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Degree</th>
                             <th scope="col" style="text-align: right">Plate  Number</th>
                             
                         </tr>
@@ -30,7 +29,6 @@
                                 <th scope="row">{{ $violation->id }}</th>
                                 <td>{{ $violation->type }}</td>
                                 <td>{{ $violation->price }} SDG</td>
-                                <td>{{ $violation->degree }}</td>
                                 <td style="text-align: right">{{ $violation->plate_number }}</td>
                             </tr>
                         @endforeach

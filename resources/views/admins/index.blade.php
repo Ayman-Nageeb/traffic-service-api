@@ -4,7 +4,7 @@
 
 @section('content_header')
     <div class="d-flex justify-content-between">
-        <h1 class="m-0 text-dark">Dashboard</h1>
+        <h1 class="m-0 text-dark">Admins</h1>
         <a href="{{ route('admins.create') }}" class="btn btn-primary">Add Admin</a>
     </div>
 @stop
@@ -30,7 +30,11 @@
                                 <td>{{ $admin->name }}</td>
                                 <td>{{ $admin->email }}</td>
                                 <td>{{ $admin->password }}</td>
-                                <td><a href="{{ route('admins.edit', $admin->id) }}" class="btn btn-sm btn-success">Edit</a></td>
+                                <td>
+                                    @if($admin['id'] != 1)
+                                        <a href="{{ route('admins.edit', $admin->id) }}" class="btn btn-sm btn-success">Edit</a>
+                                    @endif
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>

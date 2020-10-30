@@ -17,7 +17,7 @@ class CreateViolationsTable extends Migration
             $table->id();
             $table->text('type');
             $table->integer('price');
-            $table->foreignId('plate_number');
+            $table->string('plate_number');
             $table->timestamps();
         });
     }

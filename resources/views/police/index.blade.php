@@ -4,7 +4,7 @@
 
 @section('content_header')
     <div class="d-flex justify-content-between">
-        <h1 class="m-0 text-dark">Dashboard</h1>
+        <h1 class="m-0 text-dark">Police Officers</h1>
         <a href="{{ route('police.create') }}" class="btn btn-primary">Add Police</a>
     </div>
 @stop

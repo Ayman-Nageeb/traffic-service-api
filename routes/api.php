@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/violations', 'API\ViolationsController@store');
+Route::post('/register', 'API\CitizensConttoller@store');
+
+Route::post('/login/citizen', 'API\CitizensConttoller@login');
+Route::post('/login/police', 'API\PoliceConttoller@login');
+
+Route::get('/notifications/{id}', 'API\NotificationsController@index');
